@@ -8,6 +8,7 @@ function AddTask({ todos, onAddTask }) {
       <label className="flex-[1_0_100px]" htmlFor="add-task">
         <input
           className="text-sm w-full p-2 rounded-sm outline-none focus:ring-2 ring-indigo-700"
+          value={inputVal}
           onChange={(e) => {
             setInputVal(e.target.value);
           }}
